@@ -5,7 +5,7 @@ const path = require('path'); // path lets us navigate file/folders
 // heroku assigns a port when it deploys via the process (environment variables)
 // locally this will run at port 3000, remotely it will run wherever heroku it is
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
